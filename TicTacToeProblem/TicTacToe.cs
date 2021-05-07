@@ -27,7 +27,17 @@ namespace TicTacToeProblem
         }
         public void PlayerPositionCheck(string pos)
         {
-
+            pos=pos.ToUpper();
+            if (pos == "X")
+            {
+                Console.WriteLine("Player Choice Is {0}",pos);
+                Console.WriteLine("Computer Choice Is O");
+            }
+            else
+            {
+                Console.WriteLine("Computer Choice Is {0}", pos);
+                Console.WriteLine("Player Choice Is O");
+            }
         }
     }
 }
